@@ -1,6 +1,6 @@
 # SI-2024-22BECB73
 📡 Repository for Summer Internship 2024"Intro to cubesat and satellite communication"
-## Lab Exercises
+## Lab Exercises😊
 ## Arduino 🗜
 Arduino is an open-source hardware and software company, project, and user community that designs and manufactures single-board microcontrollers and microcontroller kits for building digital devices.We are using ESP 32 microcontroller which is cheap, easily available used to send data and recieve data in satellite communication with integrated wifi facility and dual bluetooth mode. 
 ## Lab-1 Introduction to ESP 32
