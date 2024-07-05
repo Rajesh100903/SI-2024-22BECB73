@@ -104,5 +104,5 @@ In signal processing, FFT forms the basis of frequency domain analysis (spectral
 -In this module we would be using python to simulate signal processing.Python is a widely used interpreted language used in industries for data management, signal processing, application devolopment.
 -[FFT using python](https://github.com/Rajesh100903/SI-2024-22BECB73/tree/main/Lab/arduino%20)
 Frequency-shift keying (FSK) is a frequency modulation scheme in which digital information is encoded on a carrier signal by periodically shifting the frequency of the carrier between several discrete frequencies.
--[FFT using python]
+-[FFT using python](https://github.com/Rajesh100903/SI-2024-22BECB73/blob/main/FFT1)
 -[FSK using python]
