@@ -122,3 +122,23 @@ It should be looking alike  this->![2222](https://github.com/Rajesh100903/SI-202
 #### TO generate a cosine wave and plot the axis labelling
 [Cosine wave](https://github.com/Rajesh100903/SI-2024-22BECB73/blob/main/cos%20wave%20gen)
 
+## Lab 6 Antenna design and configuration using 4NEC2 
+4nec2 is a popular free NEC-2 based antenna modeler and optimizer for Windows. It allows users to design, analyze, and optimize antenna structures and calculate their properties such as radiation patterns, impedance, and more. Here's a brief overview and some guidance on how to use 4nec2.We can manufacture dipole antennas, horn shapped antennas , V shapped antennas.
+ ```
+CM Example 2 :	Loaded dipole in free space
+CM 		See GetStarted.txt
+CE 					' End of comment
+'
+SY len=.330				' Symbol: Length for WL/2
+'
+GW 1 9 0 -len/2 0 0 len/2 0 .0001	' Wire 1, 9 segments, halve wavelength long.
+GE 0					' End of geometry
+'
+LD 5 1 0 0 5.8001E7			' Wire conductivity
+'
+EX 0 1 5 0 1 0				' Voltage source (1+j0) at wire 1 segment 5.
+FR 0 1 0 0 433 0			' Set design frequency (300 Mc).
+EN					' End of NEC input
+
+-We can use a tiny VNA to simulate and tune our antennas and measure various parameters.
+```
