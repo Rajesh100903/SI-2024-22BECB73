@@ -163,4 +163,5 @@ We had simulated various parameters such as impedance, SWR and the radiation pat
 ### -We can use a tiny VNA to simulate and tune our antennas and measure various parameters.
 We had simulated VNA to calculate the SWR to be 1.147 impedance(Z) to be 51.09 ohm 52.9 pF and minimun frequency at 439 MHz.
 ![WhatsApp Image 2024-07-06 at 1 30 51 AM](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/c22dcedb-8a55-4f0d-8ee5-64bc4761b7db)
-
+## Lab 7 To simulate satellite communication using Tiny GS and using LoRa+ESP 32 module
+TinyGS is an open network of Ground Stations distributed around the world to receive and operate LoRa satellites, weather probes and other flying objects, using cheap and versatile modules.
