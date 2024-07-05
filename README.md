@@ -11,7 +11,7 @@ ESP32 is a series of low-cost, low-power system on a chip microcontrollers with 
    [Datasheet ESP 32](https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf)
 ## Lab-2 Blinking LED 
 -Blinking LED lights are some of the most popular bulbs used today. The blinking light is simply a light that goes on and off in a specific pattern. The pattern can be fast or slow and the lights can be a solid color or a variety of different colors.
--Here we go to the code we can refer to for LED blinking-
+-Here we go to the code we can refer to for LED blinking-[lab 1](https://github.com/Rajesh100903/SI-2024-22BECB73/blob/main/Lab/arduino%20/blinking%20led)
 ### code for led dimming
 ```C
 int LEDpin = 13;
