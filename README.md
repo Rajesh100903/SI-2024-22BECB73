@@ -1,5 +1,39 @@
 # SI-2024-22BECB73
 📡 Repository for Summer Internship 2024"Intro to cubesat and satellite communication"
+## Cubesats
+Cubesats are small and standardized spacecraft used primarily for research purposes, typically launched into space as secondary payloads on larger missions or as part of dedicated small satellite launch programs. Here's a comprehensive overview of cubesats:
+### Characteristics of Cubesats:
+#### Size and Form Factor:
+Cubesats are small satellites with a standardized form factor based on cubic units called "units" or "U".
+The most common size is 10 cm x 10 cm x 10 cm (1U), but larger configurations such as 2U (10 cm x 10 cm x 20 cm) and 3U (10 cm x 10 cm x 30 cm) are also prevalent.
+They typically weigh between 1 to 10 kilograms, though larger variants exist.
+#### Standardization:
+Cubesats adhere to standards established by the CubeSat Program started by Cal Poly (California Polytechnic State University) and Stanford University.
+These standards ensure interoperability, ease of integration, and reduced costs for development and launch.
+#### Purpose and Applications:
+Cubesats serve a variety of purposes, including scientific research, technology demonstration, Earth observation, telecommunications, and educational outreach.
+They are often used by universities, research institutions, and commercial entities to conduct experiments and validate new technologies in space.
+#### Launch Opportunities:
+Cubesats are typically launched as secondary payloads on rockets carrying larger primary payloads.
+They may also be launched through dedicated small satellite launch services or deployed from the International Space Station (ISS).
+### Components and Systems:
+Cubesats are equipped with standard subsystems including power systems (solar panels and batteries), communication systems, on-board computers, attitude determination and control systems (ADCS), and payload instruments.
+They may feature deployable antennas, solar arrays, and propulsion systems depending on mission requirements.
+#### Mission Durations:
+Cubesats have varying mission durations depending on their orbit and objectives.
+Some cubesats operate in Low Earth Orbit (LEO) and have shorter lifespans (months to a few years), while others may be placed in higher orbits for longer-duration missions.
+Advantages:
+## Lower cost compared to traditional larger satellites, making them accessible for educational and research purposes.
+## Rapid development and deployment timelines compared to larger satellites.
+#### Challenges:
+###### Limited payload capacity and volume for scientific instruments and subsystems.
+###### Dependence on primary mission schedules for launch opportunities.
+###### Limited communication and power capabilities compared to larger satellites.
+## Examples of Cubesat Missions:
+###### Educational: Universities use cubesats for hands-on training in space technology and engineering.
+###### Scientific Research: Conducting experiments in microgravity, studying Earth's atmosphere, monitoring climate change, etc.
+###### Technology Demonstration: Testing new sensors, communication systems, propulsion methods, etc.
+###### Commercial Applications: Providing Earth observation services, satellite communications, and internet-of-things (IoT) connectivity.
 ## Lab Exercises😊
 ## Arduino 🗜
 Arduino is an open-source hardware and software company, project, and user community that designs and manufactures single-board microcontrollers and microcontroller kits for building digital devices.We are using ESP 32 microcontroller which is cheap, easily available used to send data and recieve data in satellite communication with integrated wifi facility and dual bluetooth mode. 
