@@ -103,12 +103,13 @@ Temperature and humidity using DHT22 sensor and display it on a OLED display-[Te
 In signal processing, FFT forms the basis of frequency domain analysis (spectral analysis) and is used for signal filtering, spectral estimation, data compression, and other applications. Variations of the FFT such as the short-time Fourier transform also allow for simultaneous analysis in time and frequency domains. 
 -In this module we would be using python to simulate signal processing.Python is a widely used interpreted language used in industries for data management, signal processing, application devolopment.
 -[FFT using python](https://github.com/Rajesh100903/SI-2024-22BECB73/tree/main/Lab/arduino%20)
+
+
 Frequency-shift keying (FSK) is a frequency modulation scheme in which digital information is encoded on a carrier signal by periodically shifting the frequency of the carrier between several discrete frequencies.
 -(https://github.com/Rajesh100903/SI-2024-22BECB73/blob/main/FFT1)
+
+
 It should be looking alike  this-> ![111](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/a11d1cb5-2077-474b-b560-27c88ad26482)
-
-
-
 
 
 
@@ -118,4 +119,6 @@ It should be looking alike  this-> ![111](https://github.com/Rajesh100903/SI-202
 
 -(https://github.com/Rajesh100903/SI-2024-22BECB73/blob/main/FSK)
 It should be looking alike  this->![2222](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/bba637f8-a215-4bd9-93b5-9bde5574b16b)
+#### TO generate a cosine wave and plot the axis labelling
+[Cosine wave](https://github.com/Rajesh100903/SI-2024-22BECB73/blob/main/cos%20wave%20gen)
 
