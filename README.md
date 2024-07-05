@@ -115,7 +115,7 @@ Frequency-shift keying (FSK) is a frequency modulation scheme in which digital i
 ## Lab 6 Antenna design and configuration using 4NEC2 
 4nec2 is a popular free NEC-2 based antenna modeler and optimizer for Windows. It allows users to design, analyze, and optimize antenna structures and calculate their properties such as radiation patterns, impedance, and more. Here's a brief overview and some guidance on how to use 4nec2.We can manufacture dipole antennas, horn shapped antennas , V shapped antennas.
 -an example illustrating a loaded dipole in a free space-
- ```
+ ``` 
 CM Example 2 :	Loaded dipole in free space
 CM 		See GetStarted.txt
 CE 					' End of comment
@@ -135,6 +135,7 @@ EN					' End of NEC input
 - an example to set up V dipole
 ```
 CM Example 2 :	Loaded dipole in free space
+```
 CM 		See GetStarted.txt
 CE 					' End of comment
 '
@@ -154,8 +155,9 @@ LD 5 3 0 0 5.8001E7			' Wire conductivity
 ```
 We had simulated various parameters such as impedance, SWR and the radiation pattern-
 
-
-
+![Wse2](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/feea9575-52a2-4107-a88d-13e9f503f980)
+![Wse](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/c000c0a1-a46f-435d-a2c5-e9d20cb2f96e)
+![Wse3](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/e7a183bc-0f2d-4303-ac83-1a84d9e7780b)
 
 
 -We can use a tiny VNA to simulate and tune our antennas and measure various parameters.
