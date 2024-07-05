@@ -106,24 +106,15 @@ In signal processing, FFT forms the basis of frequency domain analysis (spectral
 
 
 Frequency-shift keying (FSK) is a frequency modulation scheme in which digital information is encoded on a carrier signal by periodically shifting the frequency of the carrier between several discrete frequencies.
--(https://github.com/Rajesh100903/SI-2024-22BECB73/blob/main/FFT1)
+-[FSK ](https://github.com/Rajesh100903/SI-2024-22BECB73/blob/main/FFT1)
 
 
-It should be looking alike  this-> ![111](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/a11d1cb5-2077-474b-b560-27c88ad26482)
-
-
-
-
-
-
-
--(https://github.com/Rajesh100903/SI-2024-22BECB73/blob/main/FSK)
-It should be looking alike  this->![2222](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/bba637f8-a215-4bd9-93b5-9bde5574b16b)
 #### TO generate a cosine wave and plot the axis labelling
 [Cosine wave](https://github.com/Rajesh100903/SI-2024-22BECB73/blob/main/cos%20wave%20gen)
 
 ## Lab 6 Antenna design and configuration using 4NEC2 
 4nec2 is a popular free NEC-2 based antenna modeler and optimizer for Windows. It allows users to design, analyze, and optimize antenna structures and calculate their properties such as radiation patterns, impedance, and more. Here's a brief overview and some guidance on how to use 4nec2.We can manufacture dipole antennas, horn shapped antennas , V shapped antennas.
+-an example illustrating a loaded dipole in a free space-
  ```
 CM Example 2 :	Loaded dipole in free space
 CM 		See GetStarted.txt
@@ -139,6 +130,33 @@ LD 5 1 0 0 5.8001E7			' Wire conductivity
 EX 0 1 5 0 1 0				' Voltage source (1+j0) at wire 1 segment 5.
 FR 0 1 0 0 433 0			' Set design frequency (300 Mc).
 EN					' End of NEC input
+
+
+- an example to set up V dipole
+```
+CM Example 2 :	Loaded dipole in free space
+CM 		See GetStarted.txt
+CE 					' End of comment
+'
+SY ylen=.1392				' Symbol: Length for WL/2
+SY zlen=.0975
+SY ysma=0.00409
+SY zsma=0.00286			        ' Symbol: Length for WL/2
+'
+GW 1 9 0 -ylen zlen 0 -ysma zsma .0001	' Wire 1, 9 segments, halve wavelength long.
+GW 2 9 0  ysma zsma 0  ylen zlen .0001	' Wire 2, 9 segments, halve wavelength long.
+GW 3 1 0 -ysma zsma 0  ysma zsma .0001	' Wire 3, 9 segments, halve wavelength long.
+GE 0					' End of geometry
+'
+LD 5 1 0 0 5.8001E7			' Wire conductivity
+LD 5 2 0 0 5.8001E7			' Wire conductivity
+LD 5 3 0 0 5.8001E7			' Wire conductivity
+```
+We had simulated various parameters such as impedance, SWR and the radiation pattern-
+
+
+
+
 
 -We can use a tiny VNA to simulate and tune our antennas and measure various parameters.
 ```
