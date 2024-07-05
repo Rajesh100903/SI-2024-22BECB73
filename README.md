@@ -119,5 +119,6 @@ delay(2000);
 }
 void loop() {}
 ```
-Serial monitor to OLED Display-
+Serial monitor to OLED Display-[OLED Sisplay](https://github.com/Rajesh100903/SI-2024-22BECB73/blob/main/Lab/arduino%20/oled%20display)
+Temperature and humidity using DHT22 sensor and display it on a OLED display-[Temp Humid][
 
