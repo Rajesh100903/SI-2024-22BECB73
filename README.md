@@ -102,4 +102,6 @@ Temperature and humidity using DHT22 sensor and display it on a OLED display-[Te
 ## Computing Signal Processing using Python through WSL
 In signal processing, FFT forms the basis of frequency domain analysis (spectral analysis) and is used for signal filtering, spectral estimation, data compression, and other applications. Variations of the FFT such as the short-time Fourier transform also allow for simultaneous analysis in time and frequency domains. 
 -In this module we would be using python to simulate signal processing.Python is a widely used interpreted language used in industries for data management, signal processing, application devolopment.
--[FFT using python]
+-[FFT using python](https://github.com/Rajesh100903/SI-2024-22BECB73/tree/main/Lab/arduino%20)
+Frequency-shift keying (FSK) is a frequency modulation scheme in which digital information is encoded on a carrier signal by periodically shifting the frequency of the carrier between several discrete frequencies.
+-[FSK using python]
