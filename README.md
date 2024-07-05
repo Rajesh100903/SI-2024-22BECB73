@@ -91,34 +91,7 @@ void loop() {
 ```
 ## Lab-4 OLED Display 
 Code to display in OLED display -
-``` C
-#include <SPI.h>
-#include <Wire.h>
-#include <Adafruit_GFX.h>
-#include <Adafruit_SSD1306.h>
 
-#define SCREEN_WIDTH 128 //OLED display width
-#define SCREEN_HEIGHT 64
-#define OLED_RESET    4
-#define SCREEN_ADDRESS 0x3C
-Adafruit_SSD1306 display(SCREEN_WIDTH,SCREEN_HEIGHT,&Wire,OLED_RESET);
-void setup() {
-Serial.begin(9600);
-if(!display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS)) {
-  Serial.println(F("SSD1306 allocation failed"));
-  for(;;);
-}
-delay(2000);
-display.clearDisplay();
-display.setTextSize(1);
-display.setTextColor(SSD1306_WHITE);
-display.setCursor(7,20);
-display.println(F("Silicon,Beyond teaching"));
-display.display();
-delay(2000);
-}
-void loop() {}
-```
 Serial monitor to OLED Display-[OLED Sisplay](https://github.com/Rajesh100903/SI-2024-22BECB73/blob/main/Lab/arduino%20/oled%20display)
-Temperature and humidity using DHT22 sensor and display it on a OLED display-[Temp Humid][
+Temperature and humidity using DHT22 sensor and display it on a OLED display-[Temp Humid](https://github.com/Rajesh100903/SI-2024-22BECB73/blob/main/Lab/arduino%20/temperature%20and%20humidity%20sensor)
 
