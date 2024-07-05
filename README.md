@@ -152,7 +152,7 @@ Frequency-shift keying (FSK) is a frequency modulation scheme in which digital i
 ![fsk](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/1dc5bafd-0d94-4236-91df-15d9f5c3dc0f)
 
 
-#### TO generate a cosine wave and plot the axis labelling [Cosine wave](https://github.com/Rajesh100903/SI-2024-22BECB73/blob/main/cos%20wave%20gen)
+ To generate a cosine wave and plot the axis labelling [Cos] (https://github.com/Rajesh100903/SI-2024-22BECB73/blob/main/cos%20wave%20gen)
 
 ## Lab 6 Antenna design and configuration using 4NEC2 
 4nec2 is a popular free NEC-2 based antenna modeler and optimizer for Windows. It allows users to design, analyze, and optimize antenna structures and calculate their properties such as radiation patterns, impedance, and more. Here's a brief overview and some guidance on how to use 4nec2.We can manufacture dipole antennas, horn shapped antennas , V shapped antennas.
@@ -205,4 +205,9 @@ We had simulated various parameters such as impedance, SWR and the radiation pat
 We had simulated VNA to calculate the SWR to be 1.147 impedance(Z) to be 51.09 ohm 52.9 pF and minimun frequency at 439 MHz.
 ![WhatsApp Image 2024-07-06 at 1 30 51 AM](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/c22dcedb-8a55-4f0d-8ee5-64bc4761b7db)
 ## Lab 7 To simulate satellite communication using Tiny GS and using LoRa+ESP 32 module
+Satellite communication is the transfer of information using artificial satellites that have been launched into Earth's orbit, transmitting and relaying information from one place to another on a global scale.
+
+
+![gs](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/0939e277-220b-4818-978c-e7d14be4643b)
+
 TinyGS is an open network of Ground Stations distributed around the world to receive and operate LoRa satellites, weather probes and other flying objects, using cheap and versatile modules.
