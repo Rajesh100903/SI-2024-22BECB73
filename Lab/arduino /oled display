@@ -1,0 +1,102 @@
+#include <Wire.h>     //Includes conncetion and interface with Arduino
+#include <RH_ASK.h>   // Include the RH_ASK library
+#include <SPI.h>      // Not actually used but needed to compile the RH_ASK library
+
+//OLED portion
+#include "U8glib.h"
+U8GLIB_SH1106_128X64 u8g(U8G_I2C_OPT_NONE);
+
+RH_ASK radio(2000, 11, 12);
+
+//OLED draw function
+///*
+void draw(void) {
+  u8g.setFont(u8g_font_profont11);
+  u8g.setPrintPos(0, 10);
+  u8g.print("BEAST88");
+}
+//*/
+
+void setup()
+{
+    Serial.begin(9600);   // Use this for debugging
+ 
+    // Speed of 2000 bits per second
+    
+    if (!radio.init())
+    {
+         Serial.println("Radio module failed to initialize");
+    }
+}
+ 
+void loop()
+{
+    // Create our message
+    const char *msg = "";
+ 
+    // Send our message
+    radio.send((uint8_t*)msg, strlen(msg));
+ 
+    // Wait until the data has been sent
+    radio.waitPacketSent();
+
+    delay(1000);
+ 
+    // Also inform the serial port that we are done
+    Serial.println("Signal Sent");
+
+   //OLED calling Draw function
+   u8g.firstPage();
+    do {
+      draw();
+    } while (u8g.nextPage() );
+
+include <RH_ASK.h>
+#include <SPI.h>
+
+//OLED portion
+#include "U8glib.h"
+U8GLIB_SH1106_128X64 u8g(U8G_I2C_OPT_NONE);
+
+RH_ASK radio;
+
+//OLED draw function
+/*
+void draw(void) {
+  u8g.setFont(u8g_font_profont11);
+  u8g.setPrintPos(0, 10);
+  u8g.print("BEAST88");
+}
+//*/
+
+void setup()
+{
+    Serial.begin(9600);
+ 
+    // Speed of 2000 bits per second
+    if (!radio.init())
+    {
+         Serial.println("Radio module failed to initialize");
+    }
+}
+ 
+void loop()
+{  
+  // Create a 32 byte char buffer
+  uint8_t receive_buffer[34];
+  uint8_t buflen = sizeof(receive_buffer);
+ 
+  // If data is available, print it
+  if (radio.recv(receive_buffer, &buflen))
+  {
+    Serial.print("Signal Received: ");
+    Serial.println((char*)receive_buffer);
+  }
+  
+  /*
+  u8g.firstPage();
+  do {
+    draw();
+  } while (u8g.nextPage() );
+  //*/
+}
