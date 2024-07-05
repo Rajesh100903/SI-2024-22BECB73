@@ -1,6 +1,8 @@
 # SI-2024-22BECB73
 📡 Repository for Summer Internship 2024"Intro to cubesat and satellite communication"
 ## Cubesats
+![nasa](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/19edcd18-7e72-40ef-950d-31628cd20a4f)
+
 Cubesats are small and standardized spacecraft used primarily for research purposes, typically launched into space as secondary payloads on larger missions or as part of dedicated small satellite launch programs. Here's a comprehensive overview of cubesats:
 ### Characteristics of Cubesats:
 #### Size and Form Factor:
