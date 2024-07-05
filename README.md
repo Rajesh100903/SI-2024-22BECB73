@@ -138,6 +138,10 @@ Serial monitor to OLED Display-[OLED Display](https://github.com/Rajesh100903/SI
 Temperature and humidity using DHT22 sensor and display it on a OLED display-[Temp Humid](https://github.com/Rajesh100903/SI-2024-22BECB73/blob/main/Lab/arduino%20/temperature%20and%20humidity%20sensor)
 
 ## Lab-5 Computing Signal Processing using Python through WSL
+
+![11111](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/e5f6d425-9a32-4a55-8484-f3ca81c25931)
+
+
 In signal processing, FFT forms the basis of frequency domain analysis (spectral analysis) and is used for signal filtering, spectral estimation, data compression, and other applications. Variations of the FFT such as the short-time Fourier transform also allow for simultaneous analysis in time and frequency domains. 
 -In this module we would be using python to simulate signal processing.Python is a widely used interpreted language used in industries for data management, signal processing, application devolopment.
 -[FFT using python](https://github.com/Rajesh100903/SI-2024-22BECB73/tree/main/Lab/arduino%20)
