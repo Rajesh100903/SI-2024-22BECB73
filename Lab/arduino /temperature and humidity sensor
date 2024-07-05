@@ -1,0 +1,61 @@
+
+#include <DHT.h>
+#include <DHT_U.h>
+#include <Wire.h>
+#include <SeeedOLED.h>
+
+DHT dht(0, DHT22);
+
+void setup() {
+
+  Wire.begin();                 //initialize I2C in master mode
+
+  SeeedOled.init();             //initialize the OLED
+
+  SeeedOled.clearDisplay();     //clear the screen and set start position to top left corner
+
+  SeeedOled.setNormalDisplay(); //Set display to normal mode (i.e non-inverse mode)
+
+  SeeedOled.setPageMode();      //Set addressing mode to Page Mode
+}
+
+void loop() {
+
+  float temp, hum;
+
+  //Read temperature and humidity
+
+  do {
+
+    hum = dht.readHumidity();
+
+    temp = dht.readTemperature();
+
+  }
+
+  while (isnan(temp) || isnan(hum));
+
+  //Print temperature and humidity values on the OLED display
+
+  SeeedOled.setTextXY(0, 0);
+
+  SeeedOled.putString("Temperature:");
+
+  SeeedOled.setTextXY(1, 0);
+
+  SeeedOled.putString(String(temp).c_str());  //print temperature data converted to a c string
+
+  SeeedOled.putString("C");
+
+  SeeedOled.setTextXY(3, 0);
+
+  SeeedOled.putString("Humidity:");
+
+  SeeedOled.setTextXY(4, 0);
+
+  SeeedOled.putString(String(hum).c_str());   //print humidity data converted to a c string
+
+  SeeedOled.putString("%");
+
+  delay(2000);
+}
