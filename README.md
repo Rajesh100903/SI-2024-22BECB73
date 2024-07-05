@@ -44,6 +44,8 @@ From the ESP 32 Datasheet
 |------------|--------|
 | max output voltage | 4.34 V|
 | max output current that GPIO can source from supply to load | .06mA |
+ 
+ 
  equivalent resistance calculation-
  for the circuit as shown [GPIO->R->LED diode->0](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.instructables.com%2FControl-LED-Using-Raspberry-Pi-GPIO%2F&psig=AOvVaw16IUiKdm7cGV6s_MdmkBs4&ust=1720290916425000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJD5iJ3FkIcDFQAAAAAdAAAAABAJ)
 
