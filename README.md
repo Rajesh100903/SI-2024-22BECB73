@@ -90,8 +90,12 @@ void loop() {
 }
 ```
 ## Lab-4 OLED Display 
+An organic light-emitting diode (OLED), also known as organic electroluminescent (organic EL) diode,[1][2] is a type of light-emitting diode (LED) in which the emissive electroluminescent layer is an organic compound film that emits light in response to an electric current. This organic layer is situated between two electrodes; typically, at least one of these electrodes is transparent. OLEDs are used to create digital displays in devices such as television screens, computer monitors, and portable systems such as smartphones and handheld game consoles. A major area of research is the development of white OLED devices for use in solid-state lighting applications.
+Image of OLED display-[128x64-Blue-I2C-OLED-Display](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/ce7ed38b-4412-4fc6-af0b-457a75b29931)
+
 Code to display in OLED display -[OLED](https://github.com/Rajesh100903/SI-2024-22BECB73/blob/main/Lab/arduino%20/oled%20display)
 
-Serial monitor to OLED Display-[OLED Sisplay](https://github.com/Rajesh100903/SI-2024-22BECB73/blob/main/Lab/arduino%20/oled%20display)
+Serial monitor to OLED Display-[OLED Display](https://github.com/Rajesh100903/SI-2024-22BECB73/blob/main/Lab/arduino%20/oled%20display)
+
 Temperature and humidity using DHT22 sensor and display it on a OLED display-[Temp Humid](https://github.com/Rajesh100903/SI-2024-22BECB73/blob/main/Lab/arduino%20/temperature%20and%20humidity%20sensor)
 
