@@ -68,7 +68,7 @@ void loop() {
 }
 ```
 ##### Code to assign an input port for 2-step dimmer control.
-1: Full intensity, 0: 25-percent intensity.
+Full intensity, 0: 25-percent intensity.
  ``` C
  #define ledcSetup
 #define ledcAttachPin
@@ -119,4 +119,5 @@ delay(2000);
 }
 void loop() {}
 ```
+Serial monitor to OLED Display-
 
