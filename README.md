@@ -11,8 +11,8 @@ ESP32 is a series of low-cost, low-power system on a chip microcontrollers with 
    [Datasheet ESP 32](https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf)
 ## Lab-2 Blinking LED 
 -Blinking LED lights are some of the most popular bulbs used today. The blinking light is simply a light that goes on and off in a specific pattern. The pattern can be fast or slow and the lights can be a solid color or a variety of different colors.
--Here we go to the code we can refer to for LED blinking-[lab 1](https://github.com/Rajesh100903/SI-2024-22BECB73/blob/main/Lab/arduino%20/blinking%20led)
-### code for led dimming
+-Here we go to the code we can refer to for LED blinking.
+### code for led dimming 💡
 ```C
 int LEDpin = 13;
 int delayT = 1000;
@@ -28,7 +28,7 @@ digitalWrite(LEDpin, LOW);
 delay(delayT);
 }
 ```
-### Lab-3 Dimming LED
+## Lab-3 Dimming LED 💡
 Parameters from LED datasheet
 | Parameters | Value|
 |----------|-------|
@@ -39,4 +39,84 @@ Parameters from LED datasheet
 |typical capacitance | 45pF|
 |op temperature range | -40 to 85 C|
 
+From the ESP 32 Datasheet
+| Parameters | Values |
+|------------|--------|
+| max output voltage | 4.34 V|
+| max output current that GPIO can source from supply to load | .06mA |
+ equivalent resistance calculation-
+ for the circuit as shown [GPIO->R->LED diode->0](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.instructables.com%2FControl-LED-Using-Raspberry-Pi-GPIO%2F&psig=AOvVaw16IUiKdm7cGV6s_MdmkBs4&ust=1720290916425000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJD5iJ3FkIcDFQAAAAAdAAAAABAJ)
+
+=>4.34-30x10pow(-3)(R)-0.7=0
+=>R=3.64/30x10pow(-3)=121.33 ohms
+#### so the equivalent resistance which we had choosen for our convienience was= 100 ohms 
+code for controlling the led intensity-
+``` C
+int led = 5;
+int brightness = 0;
+int fadeamount = 5;
+void setup() {
+  pinMode(led,OUTPUT);
+}
+void loop() {
+  analogWrite(led,brightness);
+  brightness=brightness+fadeamount;
+  if(brightness<=0 || brightness>=255) {
+    fadeamount=-fadeamount;
+  }
+  delay(30);
+}
+```
+##### Code to assign an input port for 2-step dimmer control.
+1: Full intensity, 0: 25-percent intensity.
+ ``` C
+ #define ledcSetup
+#define ledcAttachPin
+const int ledpin = 18;
+const int freq = 5000;
+const int resolution = 8;
+void setup() {
+  ledcAttachPin(ledpin,freq,resolution);
+} 
+void loop() {
+  for(int dutyCycle = 255; dutyCycle <= 0; dutyCycle++ ){
+    ledcWrite(ledpin, dutyCycle);
+    delay(1000);
+  }
+  for(int dutyCycle = 255; dutyCycle >=0; dutyCycle--){
+    ledcWrite(ledpin, dutyCycle);
+    delay(1000);
+  }
+}
+```
+## Lab-4 OLED Display 
+Code to display in OLED display -
+``` C
+#include <SPI.h>
+#include <Wire.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_SSD1306.h>
+
+#define SCREEN_WIDTH 128 //OLED display width
+#define SCREEN_HEIGHT 64
+#define OLED_RESET    4
+#define SCREEN_ADDRESS 0x3C
+Adafruit_SSD1306 display(SCREEN_WIDTH,SCREEN_HEIGHT,&Wire,OLED_RESET);
+void setup() {
+Serial.begin(9600);
+if(!display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS)) {
+  Serial.println(F("SSD1306 allocation failed"));
+  for(;;);
+}
+delay(2000);
+display.clearDisplay();
+display.setTextSize(1);
+display.setTextColor(SSD1306_WHITE);
+display.setCursor(7,20);
+display.println(F("Silicon,Beyond teaching"));
+display.display();
+delay(2000);
+}
+void loop() {}
+```
 
