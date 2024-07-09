@@ -206,7 +206,8 @@ We had simulated various parameters such as impedance, SWR and the radiation pat
 ![Wse](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/c000c0a1-a46f-435d-a2c5-e9d20cb2f96e)
 ![Wse3](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/e7a183bc-0f2d-4303-ac83-1a84d9e7780b)
 The matching network is->
-![antenna](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/b5df8621-d1f5-4f43-9df3-0868d004b217)
+![antenna](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/97c5ec03-8635-47cb-981e-5fc8a5ca93ed)
+
 ### -We can use a Nano VNA to simulate and tune our antennas and measure various parameters.
 We had simulated VNA to calculate the SWR to be 1.147,. impedance(Z) to be 51.09 ohm 52.9 pF and minimun frequency at 439 MHz.
 ![WhatsApp Image 2024-07-06 at 1 30 51 AM](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/c22dcedb-8a55-4f0d-8ee5-64bc4761b7db)
