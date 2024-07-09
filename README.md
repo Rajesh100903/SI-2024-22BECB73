@@ -218,3 +218,8 @@ Satellite communication is the transfer of information using artificial satellit
 ![gs](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/0939e277-220b-4818-978c-e7d14be4643b)
 
 TinyGS is an open network of Ground Stations distributed around the world to receive and operate LoRa satellites, weather probes and other flying objects, using cheap and versatile modules.
+We have set up a ground station recieving telemetary packets from the satellite passing by. 
+
+<img width="752" alt="WWW" src="https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/0802292e-3368-4b23-9260-99e6ac131e32">
+
+<img width="322" alt="W is worst" src="https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/7e5f54f8-42f7-4e9c-adf1-33e4f8ffea55">
