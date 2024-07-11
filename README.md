@@ -224,3 +224,8 @@ We have set up a ground station recieving telemetary packets from the satellite 
 <img width="752" alt="WWW" src="https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/0802292e-3368-4b23-9260-99e6ac131e32">
 
 <img width="322" alt="W is worst" src="https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/7e5f54f8-42f7-4e9c-adf1-33e4f8ffea55">
+
+We had recieved about 49 telemetery packets from the different satelites 
+Some of them is as follows---------------------
+![image](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/2040b79b-9f66-412c-8ed9-0118be984bfa)
+
