@@ -180,10 +180,15 @@ Code to display in OLED display -[OLED](https://github.com/Rajesh100903/SI-2024-
 ## Lab-6 Controlling an LED through serial monitor
 Serial monitor to OLED Display-[OLED Display](https://github.com/Rajesh100903/SI-2024-22BECB73/blob/main/Lab/arduino%20/oled%20display)
 
-Temperature and humidity using DHT22 sensor and display it on a OLED display-[Temp Humid](https://github.com/Rajesh100903/SI-2024-22BECB73/blob/main/Lab/arduino%20/temperature%20and%20humidity%20sensor)
+## Lab 7 I2C-based OLED display control
+I2C stands for Inter-Integrated Circuit. It is a bus interface connection protocol incorporated into devices for serial communication. It was originally designed by Philips Semiconductor in 1982. Recently, it is a widely used protocol for short-distance communication. It is also known as Two Wired Interface(TWI).
+Working of I2C Communication Protocol :
+It uses only 2 bi-directional open-drain lines for data communication called SDA and SCL. Both these lines are pulled high.
+Serial Data (SDA) – Transfer of data takes place through this pin.
+Serial Clock (SCL) – It carries the clock signal.
+[I2C](https://github.com/Rajesh100903/SI-2024-22BECB73/blob/main/Lab/i2c%20oled%20display)
 
-
-## Lab-5 Computing Signal Processing using Python through WSL and TLE 📶📡
+## Lab-8 Computing Signal Processing using Python through WSL and TLE 📶📡
 In signal processing, FFT forms the basis of frequency domain analysis (spectral analysis) and is used for signal filtering, spectral estimation, data compression, and other applications. Variations of the FFT such as the short-time Fourier transform also allow for simultaneous analysis in time and frequency domains. 
 -In this module we would be using python to simulate signal processing.Python is a widely used interpreted language used in industries for data management, signal processing, application devolopment.
 ![fft](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/a10c4908-b999-49fc-89c6-aff607566de6)
@@ -199,7 +204,7 @@ A two-line element set (TLE, or more rarely 2LE) or three-line element set (3LE)
 code for latitude and longitude generation using TLE is as follows->[TLE](https://github.com/Rajesh100903/SI-2024-22BECB73/blob/main/Lab/TLE)
 
 ###### Latitude was generated to be as 33.07590399036185 longitude was -39.341103283558745 and altitude was 830.8149737295089 kms
-the location of satelite is -[Lat,Long](https://www.google.com/maps/search/?api=1&query=29.54667195811989,-151.8386296562339)
+the location of satelite is -[Lat,Long](https://www.google.com/maps/search/?api=1&query=29.54667195811989,-151.8386296562339)  
 ## Lab 6 Antenna design and configuration using 4NEC2 
 4nec2 is a popular free NEC-2 based antenna modeler and optimizer for Windows. It allows users to design, analyze, and optimize antenna structures and calculate their properties such as radiation patterns, impedance, and more. Here's a brief overview and some guidance on how to use 4nec2.We can manufacture dipole antennas, horn shapped antennas , V shapped antennas.
 -an example illustrating a loaded dipole in a free space-
