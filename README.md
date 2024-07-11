@@ -144,7 +144,7 @@ Serial monitor to OLED Display-[OLED Display](https://github.com/Rajesh100903/SI
 
 Temperature and humidity using DHT22 sensor and display it on a OLED display-[Temp Humid](https://github.com/Rajesh100903/SI-2024-22BECB73/blob/main/Lab/arduino%20/temperature%20and%20humidity%20sensor)
 
-## Lab-5 Computing Signal Processing using Python through WSL
+## Lab-5 Computing Signal Processing using Python through WSL and TLE 📶📡
 In signal processing, FFT forms the basis of frequency domain analysis (spectral analysis) and is used for signal filtering, spectral estimation, data compression, and other applications. Variations of the FFT such as the short-time Fourier transform also allow for simultaneous analysis in time and frequency domains. 
 -In this module we would be using python to simulate signal processing.Python is a widely used interpreted language used in industries for data management, signal processing, application devolopment.
 ![fft](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/a10c4908-b999-49fc-89c6-aff607566de6)
@@ -154,6 +154,11 @@ Frequency-shift keying (FSK) is a frequency modulation scheme in which digital i
 
  To generate a cosine wave and plot the axis labelling ![cos](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/526cd081-fe01-402d-b17b-c783898bb5b4)
 
+
+A two-line element set (TLE, or more rarely 2LE) or three-line element set (3LE) is a data format encoding a list of orbital elements of an Earth-orbiting object for a given point in time, the epoch. Using a suitable prediction formula, the state (position and velocity) at any point in the past or future can be estimated to some accuracy. The TLE data representation is specific to the simplified perturbations models (SGP, SGP4, SDP4, SGP8 and SDP8), so any algorithm using a TLE as a data source must implement one of the SGP models to correctly compute the state at a time of interest. TLEs can describe the trajectories only of Earth-orbiting objects. TLEs are widely used as input for projecting the future orbital tracks of space debris for purposes of characterizing "future debris events to support risk analysis, close approach analysis, collision avoidance maneuvering" and forensic analysis
+
+code for latitude and longitude generation using TLE is as follows->
+the location of satelite is -[Lat,Long](https://www.google.com/maps/search/?api=1&query=29.54667195811989,-151.8386296562339)
 ## Lab 6 Antenna design and configuration using 4NEC2 
 4nec2 is a popular free NEC-2 based antenna modeler and optimizer for Windows. It allows users to design, analyze, and optimize antenna structures and calculate their properties such as radiation patterns, impedance, and more. Here's a brief overview and some guidance on how to use 4nec2.We can manufacture dipole antennas, horn shapped antennas , V shapped antennas.
 -an example illustrating a loaded dipole in a free space-
