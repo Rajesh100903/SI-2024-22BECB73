@@ -132,7 +132,8 @@ void loop() {
 }
 ```
 ## Lab-4 OLED Display
-![wwew](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/c26cd90a-4d26-4c91-af45-9ed51e718cc1)
+![wwwwwwww](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/c7eeae18-7b0f-47a7-a3d0-141ef0503a92)
+
 
 An organic light-emitting diode (OLED), also known as organic electroluminescent (organic EL) diode,[1][2] is a type of light-emitting diode (LED) in which the emissive electroluminescent layer is an organic compound film that emits light in response to an electric current. This organic layer is situated between two electrodes; typically, at least one of these electrodes is transparent. OLEDs are used to create digital displays in devices such as television screens, computer monitors, and portable systems such as smartphones and handheld game consoles. A major area of research is the development of white OLED devices for use in solid-state lighting applications.
 Image of OLED display-[128x64-Blue-I2C-OLED-Display](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/ce7ed38b-4412-4fc6-af0b-457a75b29931)
@@ -144,19 +145,12 @@ Serial monitor to OLED Display-[OLED Display](https://github.com/Rajesh100903/SI
 Temperature and humidity using DHT22 sensor and display it on a OLED display-[Temp Humid](https://github.com/Rajesh100903/SI-2024-22BECB73/blob/main/Lab/arduino%20/temperature%20and%20humidity%20sensor)
 
 ## Lab-5 Computing Signal Processing using Python through WSL
-
-![11111](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/e5f6d425-9a32-4a55-8484-f3ca81c25931)
-
-
 In signal processing, FFT forms the basis of frequency domain analysis (spectral analysis) and is used for signal filtering, spectral estimation, data compression, and other applications. Variations of the FFT such as the short-time Fourier transform also allow for simultaneous analysis in time and frequency domains. 
 -In this module we would be using python to simulate signal processing.Python is a widely used interpreted language used in industries for data management, signal processing, application devolopment.
--[FFT using python](https://github.com/Rajesh100903/SI-2024-22BECB73/tree/main/Lab/arduino%20)
-
+![fft](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/a10c4908-b999-49fc-89c6-aff607566de6)
 
 Frequency-shift keying (FSK) is a frequency modulation scheme in which digital information is encoded on a carrier signal by periodically shifting the frequency of the carrier between several discrete frequencies.
--[FSK ](https://github.com/Rajesh100903/SI-2024-22BECB73/blob/main/FFT1)
-![fsk](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/1dc5bafd-0d94-4236-91df-15d9f5c3dc0f)
-
+![fsk-lab2](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/36a1e66e-5a8c-424f-8f3f-9243c1b6f333)
 
  To generate a cosine wave and plot the axis labelling [Cos] (https://github.com/Rajesh100903/SI-2024-22BECB73/blob/main/cos%20wave%20gen)
 
