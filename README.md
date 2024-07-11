@@ -152,7 +152,7 @@ In signal processing, FFT forms the basis of frequency domain analysis (spectral
 Frequency-shift keying (FSK) is a frequency modulation scheme in which digital information is encoded on a carrier signal by periodically shifting the frequency of the carrier between several discrete frequencies.
 ![fsk-lab2](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/36a1e66e-5a8c-424f-8f3f-9243c1b6f333)
 
- To generate a cosine wave and plot the axis labelling [Cos] (https://github.com/Rajesh100903/SI-2024-22BECB73/blob/main/cos%20wave%20gen)
+ To generate a cosine wave and plot the axis labelling ![cos](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/526cd081-fe01-402d-b17b-c783898bb5b4)
 
 ## Lab 6 Antenna design and configuration using 4NEC2 
 4nec2 is a popular free NEC-2 based antenna modeler and optimizer for Windows. It allows users to design, analyze, and optimize antenna structures and calculate their properties such as radiation patterns, impedance, and more. Here's a brief overview and some guidance on how to use 4nec2.We can manufacture dipole antennas, horn shapped antennas , V shapped antennas.
