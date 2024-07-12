@@ -197,6 +197,10 @@ Frequency-shift keying (FSK) is a frequency modulation scheme in which digital i
 ![fsk-lab2](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/36a1e66e-5a8c-424f-8f3f-9243c1b6f333)
 
  To generate a cosine wave and plot the axis labelling ![cos](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/526cd081-fe01-402d-b17b-c783898bb5b4)
+## Lab-9 I2C temperature sensor interface
+
+
+
 
 
 A two-line element set (TLE, or more rarely 2LE) or three-line element set (3LE) is a data format encoding a list of orbital elements of an Earth-orbiting object for a given point in time, the epoch. Using a suitable prediction formula, the state (position and velocity) at any point in the past or future can be estimated to some accuracy. The TLE data representation is specific to the simplified perturbations models (SGP, SGP4, SDP4, SGP8 and SDP8), so any algorithm using a TLE as a data source must implement one of the SGP models to correctly compute the state at a time of interest. TLEs can describe the trajectories only of Earth-orbiting objects. TLEs are widely used as input for projecting the future orbital tracks of space debris for purposes of characterizing "future debris events to support risk analysis, close approach analysis, collision avoidance maneuvering" and forensic analysis
