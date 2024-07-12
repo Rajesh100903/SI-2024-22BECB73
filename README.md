@@ -271,5 +271,7 @@ We have set up a ground station recieving telemetary packets from the satellite 
 
 We had recieved about 49 telemetery packets from the different satelites 
 Some of them is as follows---------------------
-![image](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/2040b79b-9f66-412c-8ed9-0118be984bfa)
+
+![image](https://github.com/user-attachments/assets/56df701c-ba49-4fcb-9a9d-375441f02035)
+
 
