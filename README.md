@@ -200,6 +200,27 @@ Frequency-shift keying (FSK) is a frequency modulation scheme in which digital i
 ## Lab-9 I2C temperature sensor interface
 We have simulated DHT22 to sense temperature and humidity and display every packet of data recieved by a serial monitor.
 [Temp](https://github.com/Rajesh100903/SI-2024-22BECB73/blob/main/Lab/temp)
+## Lab-10 Introduction to LoRa module
+##### LoRa 
+LoRa is a long-distance wireless transmission technology based on spread spectrum technology. It adopts the direct sequence spread spectrum method, which has strong anti-interference and high receiving sensitivity, while meeting the needs of low power consumption.
+<img width="360" alt="LoRa mdoule" src="https://github.com/user-attachments/assets/929733aa-b627-4cbe-91fb-bf3ce72462c7">
+𝐶ℎ𝑎𝑛𝑛𝑒𝑙 𝐶𝑎𝑝𝑎𝑐𝑖𝑡𝑦 𝐶 = 𝐵 ⋅ log2 (1 +𝑆/𝑁) 𝑏𝑖𝑡𝑠/𝑠𝑒𝑐
+𝑤ℎ𝑒𝑟𝑒:
+𝐵 𝑖𝑠 𝑡ℎ𝑒 𝑐ℎ𝑎𝑛𝑛𝑒𝑙 𝑏𝑎𝑛𝑑𝑤𝑖𝑑𝑡ℎ 𝐵 ,
+𝑆 𝑖𝑠 𝑡ℎ𝑒 𝑎𝑣𝑒𝑟𝑎𝑔𝑒 𝑠𝑖𝑔𝑛𝑎𝑙 𝑝𝑜𝑤𝑒𝑟 𝑊𝑎𝑡𝑡𝑠 ,
+𝑁: 𝑎𝑣𝑒𝑟𝑎𝑔𝑒 𝑛𝑜𝑖𝑠𝑒 𝑝𝑜𝑤𝑒𝑟 (𝑤𝑎𝑡𝑡𝑠)
+With some algebra and assuming S/N << 1 :
+𝐶ℎ𝑎𝑛𝑛𝑒𝑙 𝐶𝑎𝑝𝑎𝑐𝑖𝑡𝑦 𝐶 ≈ 𝐵 ⋅𝑆/𝑁 𝑏𝑖𝑡𝑠/𝑠𝑒c
+
+## Lab-11 Lab 11: LoRa communication
+LoRa (Long Range) communication is a wireless communication technology designed for long-range communication with low power consumption. In this case, we'll explore using the Ra-02 LoRa transceiver module with the ESP32 microcontroller.
+
+To calculate sensitivity of LoRa we can refer to the box(<img width="444" alt="lora sensitivity" src="https://github.com/user-attachments/assets/95bec98a-d195-4dab-8026-e3229959f43e">
+##### Conditions for efficient communication between LoRa and 
+Frequency: Ensure both Ra-02 modules are set to the same frequency (e.g., 915 MHz in the example).
+Antennas: Attach suitable antennas to Ra-02 modules for better range.
+Power: Ra-02 modules operate at 3.3V, ensure stable power supply.
+Range: LoRa can achieve several kilometers in range under ideal conditions.
 
 A two-line element set (TLE, or more rarely 2LE) or three-line element set (3LE) is a data format encoding a list of orbital elements of an Earth-orbiting object for a given point in time, the epoch. Using a suitable prediction formula, the state (position and velocity) at any point in the past or future can be estimated to some accuracy. The TLE data representation is specific to the simplified perturbations models (SGP, SGP4, SDP4, SGP8 and SDP8), so any algorithm using a TLE as a data source must implement one of the SGP models to correctly compute the state at a time of interest. TLEs can describe the trajectories only of Earth-orbiting objects. TLEs are widely used as input for projecting the future orbital tracks of space debris for purposes of characterizing "future debris events to support risk analysis, close approach analysis, collision avoidance maneuvering" and forensic analysis
 
