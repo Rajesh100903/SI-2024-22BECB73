@@ -221,7 +221,7 @@ To calculate sensitivity of LoRa we can refer to the box(<img width="444" alt="l
 - Antennas: Attach suitable antennas to Ra-02 modules for better range.
 - Power: Ra-02 modules operate at 3.3V, ensure stable power supply.
 - Range: LoRa can achieve several kilometers in range under ideal conditions.
-We can refer to the following code to communicate through the LoRa as a transmitter and reciever- [LoRa](https://github.com/Rajesh100903/SI-2024-22BECB73/tree/main/Lab)
+We can refer to the following code to communicate through the LoRa as a transmitter and reciever- [LoRa](https://github.com/Rajesh100903/SI-2024-22BECB73/blob/main/Lab/loRa%20communication)
 
 ## Lab-12 Communication between two LoRa nodes
 We have sent text packets and received the text packets with RSSI (Received Signal Strength Indicator) and SNR through Serial monitor.
@@ -316,19 +316,20 @@ We had simulated various parameters such as impedance, SWR and the radiation pat
 ![Wse3](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/e7a183bc-0f2d-4303-ac83-1a84d9e7780b)
 The matching network is->
 ![antenna](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/97c5ec03-8635-47cb-981e-5fc8a5ca93ed)
-
-A two-line element set (TLE, or more rarely 2LE) or three-line element set (3LE) is a data format encoding a list of orbital elements of an Earth-orbiting object for a given point in time, the epoch. Using a suitable prediction formula, the state (position and velocity) at any point in the past or future can be estimated to some accuracy. The TLE data representation is specific to the simplified perturbations models (SGP, SGP4, SDP4, SGP8 and SDP8), so any algorithm using a TLE as a data source must implement one of the SGP models to correctly compute the state at a time of interest. TLEs can describe the trajectories only of Earth-orbiting objects. TLEs are widely used as input for projecting the future orbital tracks of space debris for purposes of characterizing "future debris events to support risk analysis, close approach analysis, collision avoidance maneuvering" and forensic analysis
-
-code for latitude and longitude generation using TLE is as follows->[TLE](https://github.com/Rajesh100903/SI-2024-22BECB73/blob/main/Lab/TLE)
-
-###### Latitude was generated to be as 33.07590399036185 longitude was -39.341103283558745 and altitude was 830.8149737295089 kms
-the location of satelite is -[Lat,Long](https://www.google.com/maps/search/?api=1&query=29.54667195811989,-151.8386296562339)  
-
-
+## Lab 15: Physical design of Dipole and V-dipole antennas
+The following steps were taken to design an antenna and tune it to 433 Mhz 
+- First the length approxing to 18cm were cut and the SWR and minimum frequency were observed using a nano VNA.
+- Then it was tuned using VNA and cut respectively by .5 cm or 1 cm to cut down the impedance close to 50 ohm and to lower the frequency to 433 MHz.
+- Then the ESP32 and LoRa module were inbtegrated in a pcb boarde and soldered.
+- Then it was connected to the antenna by an axial cable and the packets were recieved by the board.\
+![WhatsApp Image 2024-07-12 at 12 51 57 PM (1)](https://github.com/user-attachments/assets/2a2c77b6-ff32-48f0-9b33-4897a2751165)
 ### -We can use a Nano VNA to simulate and tune our antennas and measure various parameters.
 We had simulated VNA to calculate the SWR to be 1.147,. impedance(Z) to be 51.09 ohm 52.9 pF and minimun frequency at 439 MHz.
 ![WhatsApp Image 2024-07-06 at 1 30 51 AM](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/c22dcedb-8a55-4f0d-8ee5-64bc4761b7db)
-## Lab 7 To simulate satellite communication using Tiny GS and using LoRa+ESP 32 module
+
+## Lab 16: Introduction to TinyGS
+TinyGS is an open network of Ground Stations distributed around the world to receive and operate LoRa satellites, weather probes and other flying objects, using cheap and versatile modules.
+## Lab 17: Setting up a TinyGS ground station
 Satellite communication is the transfer of information using artificial satellites that have been launched into Earth's orbit, transmitting and relaying information from one place to another on a global scale.
 [SITBBS_02.xlsx](https://github.com/user-attachments/files/16190096/SITBBS_02.xlsx)
 
@@ -336,14 +337,11 @@ Satellite communication is the transfer of information using artificial satellit
 
 ![gs](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/0939e277-220b-4818-978c-e7d14be4643b)
 
-TinyGS is an open network of Ground Stations distributed around the world to receive and operate LoRa satellites, weather probes and other flying objects, using cheap and versatile modules.
 We have set up a ground station recieving telemetary packets from the satellite passing by. 
 
 <img width="752" alt="WWW" src="https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/0802292e-3368-4b23-9260-99e6ac131e32">
 
 <img width="322" alt="W is worst" src="https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/7e5f54f8-42f7-4e9c-adf1-33e4f8ffea55">
-
-
 
 The link to our tiny GS research station is 
 [SITBBS_02](https://tinygs.com/station/SITBBS2_0GS@5483354857)
@@ -354,3 +352,11 @@ We had recieved about 49 telemetery packets from the different satelites. The da
 ![image](https://github.com/user-attachments/assets/152789fd-5103-4762-9fdb-edcab2f391de)
 
 
+
+## Lab 18: Processing TLE data with Python
+A two-line element set (TLE, or more rarely 2LE) or three-line element set (3LE) is a data format encoding a list of orbital elements of an Earth-orbiting object for a given point in time, the epoch. Using a suitable prediction formula, the state (position and velocity) at any point in the past or future can be estimated to some accuracy. The TLE data representation is specific to the simplified perturbations models (SGP, SGP4, SDP4, SGP8 and SDP8), so any algorithm using a TLE as a data source must implement one of the SGP models to correctly compute the state at a time of interest. TLEs can describe the trajectories only of Earth-orbiting objects. TLEs are widely used as input for projecting the future orbital tracks of space debris for purposes of characterizing "future debris events to support risk analysis, close approach analysis, collision avoidance maneuvering" and forensic analysis
+
+code for latitude and longitude generation using TLE is as follows->[TLE](https://github.com/Rajesh100903/SI-2024-22BECB73/blob/main/Lab/TLE)
+
+###### Latitude was generated to be as 33.07590399036185 longitude was -39.341103283558745 and altitude was 830.8149737295089 kms
+the location of satelite is -[Lat,Long](https://www.google.com/maps/search/?api=1&query=29.54667195811989,-151.8386296562339)  
