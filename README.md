@@ -224,10 +224,13 @@ To calculate sensitivity of LoRa we can refer to the box(<img width="444" alt="l
 We can refer to the following code to communicate through the LoRa as a transmitter and reciever- [LoRa](https://github.com/Rajesh100903/SI-2024-22BECB73/tree/main/Lab)
 
 ## Lab-12 Communication between two LoRa nodes
+We have sent text packets and received the text packets with RSSI (Received Signal Strength Indicator) and SNR through Serial monitor.
+[transmitter](https://github.com/Rajesh100903/SI-2024-22BECB73/blob/main/Lab/transmitter)
 
+[reciever](https://github.com/Rajesh100903/SI-2024-22BECB73/blob/main/Lab/reciever)
 
-
-
+We had also sensed temperature and humidity packets through DHT 22 and sent it through LoRa module with ESP 32 board to a serial monitor in form of packets.
+[temperature and humidity](
 
 
 
