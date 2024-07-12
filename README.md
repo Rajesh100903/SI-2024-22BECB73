@@ -258,6 +258,7 @@ We had simulated VNA to calculate the SWR to be 1.147,. impedance(Z) to be 51.09
 ![WhatsApp Image 2024-07-06 at 1 30 51 AM](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/c22dcedb-8a55-4f0d-8ee5-64bc4761b7db)
 ## Lab 7 To simulate satellite communication using Tiny GS and using LoRa+ESP 32 module
 Satellite communication is the transfer of information using artificial satellites that have been launched into Earth's orbit, transmitting and relaying information from one place to another on a global scale.
+[SITBBS_02.xlsx](https://github.com/user-attachments/files/16190096/SITBBS_02.xlsx)
 
 
 ![gs](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/0939e277-220b-4818-978c-e7d14be4643b)
@@ -274,4 +275,4 @@ We have set up a ground station recieving telemetary packets from the satellite 
 The link to our tiny GS research station is 
 [SITBBS_02](https://tinygs.com/station/SITBBS2_0GS@5483354857)
 
-We had recieved about 49 telemetery packets from the different satelites------
+We had recieved about 49 telemetery packets from the different satelites. The data is as follows--[SITBBS_02.xlsx](https://github.com/user-attachments/files/16190096/SITBBS_02.xlsx)
