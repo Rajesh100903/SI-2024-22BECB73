@@ -269,8 +269,7 @@ We have set up a ground station recieving telemetary packets from the satellite 
 
 <img width="322" alt="W is worst" src="https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/7e5f54f8-42f7-4e9c-adf1-33e4f8ffea55">
 
-We had recieved about 49 telemetery packets from the different satelites 
-Some of them is as follows---------------------
+We had recieved about 49 telemetery packets from the different satelites---------------------
 
 ![image](https://github.com/user-attachments/assets/56df701c-ba49-4fcb-9a9d-375441f02035)
 
