@@ -260,6 +260,7 @@ We had simulated VNA to calculate the SWR to be 1.147,. impedance(Z) to be 51.09
 Satellite communication is the transfer of information using artificial satellites that have been launched into Earth's orbit, transmitting and relaying information from one place to another on a global scale.
 [SITBBS_02.xlsx](https://github.com/user-attachments/files/16190096/SITBBS_02.xlsx)
 
+![WhatsApp Image 2024-07-12 at 12 51 57 PM](https://github.com/user-attachments/assets/259694e1-f359-4739-a87c-c28d045b319d)
 
 ![gs](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/0939e277-220b-4818-978c-e7d14be4643b)
 
@@ -277,5 +278,7 @@ The link to our tiny GS research station is
 
 We had recieved about 49 telemetery packets from the different satelites. The data is as follows--[SITBBS_02.xlsx](https://github.com/user-attachments/files/16190096/SITBBS_02.xlsx)
 
+
+![image](https://github.com/user-attachments/assets/152789fd-5103-4762-9fdb-edcab2f391de)
 
 
