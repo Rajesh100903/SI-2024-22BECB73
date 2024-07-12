@@ -217,10 +217,19 @@ LoRa (Long Range) communication is a wireless communication technology designed 
 
 To calculate sensitivity of LoRa we can refer to the box(<img width="444" alt="lora sensitivity" src="https://github.com/user-attachments/assets/95bec98a-d195-4dab-8026-e3229959f43e">
 ##### Conditions for efficient communication between LoRa and 
-Frequency: Ensure both Ra-02 modules are set to the same frequency (e.g., 915 MHz in the example).
-Antennas: Attach suitable antennas to Ra-02 modules for better range.
-Power: Ra-02 modules operate at 3.3V, ensure stable power supply.
-Range: LoRa can achieve several kilometers in range under ideal conditions.
+- Frequency: Ensure both Ra-02 modules are set to the same frequency (e.g., 915 MHz in the example).
+- Antennas: Attach suitable antennas to Ra-02 modules for better range.
+- Power: Ra-02 modules operate at 3.3V, ensure stable power supply.
+- Range: LoRa can achieve several kilometers in range under ideal conditions.
+We can refer to the following code to communicate through the LoRa as a transmitter and reciever- [LoRa](https://github.com/Rajesh100903/SI-2024-22BECB73/tree/main/Lab)
+
+## Lab-12 Communication between two LoRa nodes
+
+
+
+
+
+
 
 A two-line element set (TLE, or more rarely 2LE) or three-line element set (3LE) is a data format encoding a list of orbital elements of an Earth-orbiting object for a given point in time, the epoch. Using a suitable prediction formula, the state (position and velocity) at any point in the past or future can be estimated to some accuracy. The TLE data representation is specific to the simplified perturbations models (SGP, SGP4, SDP4, SGP8 and SDP8), so any algorithm using a TLE as a data source must implement one of the SGP models to correctly compute the state at a time of interest. TLEs can describe the trajectories only of Earth-orbiting objects. TLEs are widely used as input for projecting the future orbital tracks of space debris for purposes of characterizing "future debris events to support risk analysis, close approach analysis, collision avoidance maneuvering" and forensic analysis
 
