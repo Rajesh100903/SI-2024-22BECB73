@@ -230,17 +230,46 @@ We have sent text packets and received the text packets with RSSI (Received Sign
 [reciever](https://github.com/Rajesh100903/SI-2024-22BECB73/blob/main/Lab/reciever)
 
 We had also sensed temperature and humidity packets through DHT 22 and sent it through LoRa module with ESP 32 board to a serial monitor in form of packets.
-[temperature and humidity](
+[temperature and humidity](https://github.com/Rajesh100903/SI-2024-22BECB73/blob/main/Lab/temp%20sensor)
 
+## Lab 13 LoRa one-to-many communication setup
+We can follow to transmit by one transmitter and recieve through different serial monitors according to this code-
+   ``` C
+#include <SPI.h>
+#include <LoRa.h>
+#define SCK 18     // GPIO Pin connected to SCK of Ra-02
+#define MISO 19    // GPIO Pin connected to MISO of Ra-02
+#define MOSI 23    // GPIO Pin connected to MOSI of Ra-02
+#define SS 5       // GPIO Pin connected to NSS of Ra-02
+#define RST 14     // GPIO Pin connected to RESET of Ra-02
+#define DI0 4      // GPIO Pin connected to DIO0 of Ra-02
+void setup() {
+  Serial.begin(9600);
+  while (!Serial);
+  LoRa.setPins(SS, RST, DI0);
+  if (!LoRa.begin(915E6)) {
+    Serial.println("LoRa init failed. Check your connections.");
+    while (true);
+  }
+  Serial.println("LoRa init succeeded.");
+}
+void loop() {
+  // Check for LoRa packets
+  int packetSize = LoRa.parsePacket();
+  if (packetSize) {
+    // Received a packet
+    Serial.print("Received packet: ");
 
-
-A two-line element set (TLE, or more rarely 2LE) or three-line element set (3LE) is a data format encoding a list of orbital elements of an Earth-orbiting object for a given point in time, the epoch. Using a suitable prediction formula, the state (position and velocity) at any point in the past or future can be estimated to some accuracy. The TLE data representation is specific to the simplified perturbations models (SGP, SGP4, SDP4, SGP8 and SDP8), so any algorithm using a TLE as a data source must implement one of the SGP models to correctly compute the state at a time of interest. TLEs can describe the trajectories only of Earth-orbiting objects. TLEs are widely used as input for projecting the future orbital tracks of space debris for purposes of characterizing "future debris events to support risk analysis, close approach analysis, collision avoidance maneuvering" and forensic analysis
-
-code for latitude and longitude generation using TLE is as follows->[TLE](https://github.com/Rajesh100903/SI-2024-22BECB73/blob/main/Lab/TLE)
-
-###### Latitude was generated to be as 33.07590399036185 longitude was -39.341103283558745 and altitude was 830.8149737295089 kms
-the location of satelite is -[Lat,Long](https://www.google.com/maps/search/?api=1&query=29.54667195811989,-151.8386296562339)  
-## Lab 6 Antenna design and configuration using 4NEC2 
+    // Read packet
+    while (LoRa.available()) {
+      String message = LoRa.readString();
+      Serial.println(message);
+    }
+  }
+delay(100);  // Wait a short delay before checking again
+}
+```
+## Lab 14-Introduction to antenna modeling and simulation software 4NEC2.
 4nec2 is a popular free NEC-2 based antenna modeler and optimizer for Windows. It allows users to design, analyze, and optimize antenna structures and calculate their properties such as radiation patterns, impedance, and more. Here's a brief overview and some guidance on how to use 4nec2.We can manufacture dipole antennas, horn shapped antennas , V shapped antennas.
 -an example illustrating a loaded dipole in a free space-
  ``` 
@@ -287,6 +316,14 @@ We had simulated various parameters such as impedance, SWR and the radiation pat
 ![Wse3](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/e7a183bc-0f2d-4303-ac83-1a84d9e7780b)
 The matching network is->
 ![antenna](https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/97c5ec03-8635-47cb-981e-5fc8a5ca93ed)
+
+A two-line element set (TLE, or more rarely 2LE) or three-line element set (3LE) is a data format encoding a list of orbital elements of an Earth-orbiting object for a given point in time, the epoch. Using a suitable prediction formula, the state (position and velocity) at any point in the past or future can be estimated to some accuracy. The TLE data representation is specific to the simplified perturbations models (SGP, SGP4, SDP4, SGP8 and SDP8), so any algorithm using a TLE as a data source must implement one of the SGP models to correctly compute the state at a time of interest. TLEs can describe the trajectories only of Earth-orbiting objects. TLEs are widely used as input for projecting the future orbital tracks of space debris for purposes of characterizing "future debris events to support risk analysis, close approach analysis, collision avoidance maneuvering" and forensic analysis
+
+code for latitude and longitude generation using TLE is as follows->[TLE](https://github.com/Rajesh100903/SI-2024-22BECB73/blob/main/Lab/TLE)
+
+###### Latitude was generated to be as 33.07590399036185 longitude was -39.341103283558745 and altitude was 830.8149737295089 kms
+the location of satelite is -[Lat,Long](https://www.google.com/maps/search/?api=1&query=29.54667195811989,-151.8386296562339)  
+
 
 ### -We can use a Nano VNA to simulate and tune our antennas and measure various parameters.
 We had simulated VNA to calculate the SWR to be 1.147,. impedance(Z) to be 51.09 ohm 52.9 pF and minimun frequency at 439 MHz.
